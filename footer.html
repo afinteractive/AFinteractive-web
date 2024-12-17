@@ -1,10 +1,10 @@
 <footer class="footer">
-    <section class="download section-padding">
+    <section class=" section-padding" style="background-color: rgb(43, 38, 64);">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="sectioner-header text-center white">
-                        <h3>Tech stack</h3>
+                    <div class="sectioner-header text-center">
+                        <h3 class="white">Tech stack</h3>
                         <span class="line"></span>
                         <div class="scrolling-technologies">
                             <ul class="tech-icons">
@@ -43,24 +43,30 @@
                             </ul>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12" style="margin-top: 14px;">
-                <p class="text-center">© 2024 AF Interactive. All Rights Reserved.</p>
+    <section style="background-color: black;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" style="margin-top: 14px;">
+                    <p class="text-center white">© 2024 AF Interactive. All Rights Reserved.</p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
 </footer>
 
 <style>
+
     .scrolling-technologies {
         overflow: hidden;
         position: relative;
-        width: 100%; /* Ensure the container has full width */
+        width: 100%;
+        /* Ensure the container has full width */
     }
 
     .tech-icons {
@@ -71,7 +77,8 @@
     .tech-icons li {
         list-style: none;
         display: inline-block;
-        margin-right: 30px; /* Increased gap between items */
+        margin-right: 30px;
+        /* Increased gap between items */
     }
 
     .tech-icons li img {
@@ -81,10 +88,13 @@
 
     @keyframes scroll-left {
         0% {
-            transform: translateX(0); /* Start from the initial position */
+            transform: translateX(0);
+            /* Start from the initial position */
         }
+
         100% {
-            transform: translateX(-50%); /* Slide to the left and show the second set of icons */
+            transform: translateX(-50%);
+            /* Slide to the left and show the second set of icons */
         }
     }
 </style>
