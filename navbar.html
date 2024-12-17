@@ -1,7 +1,20 @@
+<style>
+  .navbar {
+    background: #7a60ff;
+    background: linear-gradient(to left, #7a60ff, #cd9ffa);
+  }
+
+  .logo-1 {
+    height: 60px;
+    filter: invert(1);
+    /* This will invert the color of the logo */
+  }
+</style>
+
 <nav class="navbar navbar-expand-lg">
   <div class="container">
-    <a class="navbar-brand navbar-logo" href="#">
-      <img src="images/logo.png" alt="logo" class="logo-1">
+    <a class="navbar-brand navbar-logo" href="index.html">
+      <img src="images/logo.png" class="logo-1">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,26 +31,3 @@
     </div>
   </div>
 </nav>
-
-<style>
-  .navbar {
-    background: #7a60ff;
-    background: linear-gradient(to left, #7a60ff, #cd9ffa);
-  }
-
-  .logo-1 {
-    height: 60px;
-  }
-
-  .logo-black {
-    filter: none;
-    background-color: #7a60ff;
-    -webkit-mask-image: url('images/logo.png');
-    /* For modern browsers */
-    mask-image: url('images/logo.png');
-    mask-repeat: no-repeat;
-    mask-size: contain;
-    mask-position: center;
-    display: block;
-  }
-</style>
