@@ -16,6 +16,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
+
 <style>
   .learn-more-btn {
     display: inline-block;
@@ -44,7 +45,60 @@
     /* Blue text on hover */
     border: 2px solid #007BFF;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    transform: translateY(-3px);
+    
+  }
+</style>
+
+
+
+<style>
+  .slider-item {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
+    height: 250px;
+  }
+
+  .slider-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .test-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .test-img img {
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+
+  .test-img img:hover {
+    transform: scale(1.1);
+  }
+
+  .test-text {
+    text-align: center;
+  }
+
+  .test-text .title {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    display: block;
+  }
+
+  .test-text p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    font-style: italic;
   }
 </style>
 
@@ -241,32 +295,54 @@
 
 
   <!-------Testimonial Start------->
-  <section class="testimonial section-padding" data-scroll-index='4'>
+  <section class="testimonial section-padding" data-scroll-index="4">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="sectioner-header text-center white">
             <h3>Testimonials</h3>
             <span class="line"></span>
-            <p class="white">Our clients' success stories are a testament to our commitment to delivering innovative,
-              reliable, and tailored solutions that exceed expectations</p>
+            <p class="white">
+              Our clients' success stories are a testament to our commitment to delivering innovative,
+              reliable, and tailored solutions that exceed expectations
+            </p>
           </div>
 
           <div class="section-content">
             <div class="row">
               <div class="offset-md-2 col-md-8 col-sm-12">
                 <div class="slider">
+                  <!-- Slider Item 1 -->
                   <div class="slider-item">
-                    <div class="test-img"><img src="images/user.jpg" alt="Placeholder" width="157" height="157"></div>
-                    <div class="test-text"><span class="title"><span>Deepak Bhatta</span>CEO, Anvesh Technologies</span>
-                      "AF Interactive's innovative approach and dedication to excellence have been key to the success of
-                      our projects. Their team's expertise and collaboration make them an invaluable partner."</div>
+                    <div class="test-img">
+                      <img src="images/user.jpg" alt="Placeholder" class="rounded-circle" width="157" height="157">
+                    </div>
+                    <div class="test-text">
+                      <span class="title">
+                        <span>Deepak Bhatta</span>
+                        CEO, Anvesh Technologies
+                      </span>
+                      <p>
+                        "AF Interactive's innovative approach and dedication to excellence have been key to the success
+                        of
+                        our projects. Their team's expertise and collaboration make them an invaluable partner."
+                      </p>
+                    </div>
                   </div>
+                  <!-- Slider Item 2 -->
                   <div class="slider-item">
-                    <div class="test-img"><img src="images/user.jpg" alt="Placeholder" width="157" height="157"></div>
-                    <div class="test-text"><span class="title"><span>Rekha Shrestha</span>Head of Management, Zeta
-                        Technology</span>"Working with AF Interactive has been an amazing experience. Their ability to
-                      understand our needs and deliver customized solutions has significantly enhanced our operations."
+                    <div class="test-img">
+                      <img src="images/user.jpg" alt="Placeholder" class="rounded-circle" width="157" height="157">
+                    </div>
+                    <div class="test-text">
+                      <span class="title">
+                        <span>Rekha Shrestha</span>
+                        Head of Management, Zeta Technology
+                      </span>
+                      <p>
+                        "Working with AF Interactive has been an amazing experience. Their ability to understand our
+                        needs and deliver customized solutions has significantly enhanced our operations."
+                      </p>
                     </div>
                   </div>
                 </div>
