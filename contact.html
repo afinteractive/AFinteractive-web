@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>AF interactive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<style>
+    .contact {
+        padding-top: 150px;
+    }
+
+    .logo-1 {
+        height: 60px;
+    }
+
+    .logo-black {
+        filter: invert(1);
+        /* Inverts colors, so white becomes black */
+    }
+
+    #toast {
+        visibility: hidden;
+        min-width: 250px;
+        margin-left: -125px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 2px;
+        padding: 16px;
+        position: fixed;
+        z-index: 1;
+        left: 50%;
+        bottom: 30px;
+        font-size: 17px;
+    }
+
+    #toast.show {
+        visibility: visible;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    }
+
+    @keyframes fadein {
+        from {
+            bottom: 0;
+            opacity: 0;
+        }
+
+        to {
+            bottom: 30px;
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeout {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+</style>
+
+<body>
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <!-------Contact Start-------> 
+    <section class="contact section-padding" data-scroll-index='6'>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="sectioner-header text-center">
+                        <h3>Contact us</h3>
+                        <span class="line"></span>
+                    </div>
+                    <div class="section-content">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-8">
+                                <form id="contact_form" action="">
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="text" id="name" class="form-input w-100" name="full-name"
+                                                placeholder="Full Name">
+                                            <div id="nameError" class="error-message" style="color: red;"></div>
+                                        </div>
+                                        <div class="col">
+                                            <input type="email" id="email" class="form-input w-100" name="email"
+                                                placeholder="Email">
+                                            <div id="emailError" class="error-message" style="color: red;"></div>
+                                        </div>
+                                    </div>
+                                    <input type="text" id="subject" class="form-input w-100" name="subject"
+                                        placeholder="Subject">
+                                    <div id="subjectError" class="error-message" style="color: red;"></div>
+                                    <textarea class="form-input w-100" id="message" placeholder="Message"
+                                        name="message"></textarea>
+                                    <div id="messageError" class="error-message" style="color: red;"></div>
+                                    <button class="btn-grad w-100 text-uppercase" type="submit"
+                                        name="button">submit</button>
+                                </form>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-4">
+                                <div class="contact-info white">
+                                    <div class="contact-item media">
+                                        <i class="fas fa-map-marker-alt media-left media-right-margin"></i>
+                                        <div class="media-body">
+                                            <p class="text-uppercase">Address</p>
+                                            <p class="text-uppercase">Tokha-5, Kathmandu</p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item media">
+                                        <i class="fas fa-mobile-alt media-left media-right-margin"></i>
+                                        <div class="media-body">
+                                            <p class="text-uppercase">Phone</p>
+                                            <p class="text-uppercase">
+                                                <a class="text-white" href="tel:+15173977100">+977 9801098190</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item media">
+                                        <i class="fab fa-whatsapp media-left media-right-margin"></i>
+                                        <div class="media-body">
+                                            <p class="text-uppercase">WhatsApp</p>
+                                            <p class="text-uppercase">
+                                                <a class="text-white" href="https://wa.me/9779801098190"
+                                                    target="_blank">+977 9801098190</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item media">
+                                        <i class="fas fa-envelope media-left media-right-margin"></i>
+                                        <div class="media-body">
+                                            <p class="text-uppercase">E-mail</p>
+                                            <p class="text-uppercase">
+                                                <a class="text-white"
+                                                    href="mailto:abcdefg@gmail.com">hello@aurorahiring.com</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item media">
+                                        <i class="fas fa-clock media-left media-right-margin"></i>
+                                        <div class="media-body">
+                                            <p class="text-uppercase">Working Hours</p>
+                                            <p class="text-uppercase">Sun-Fri 9.00 AM to 6.00PM.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------Contact End------->
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- scrollIt js -->
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <script>
+        // Load Navbar
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar').innerHTML = data);
+
+        // Load Footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+
+    <script>
+        document.getElementById("contact_form").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            var name = document.getElementById("name").value;  // Updated to "name"
+            var email = document.getElementById("email").value;
+            var subject = document.getElementById("subject").value;
+            var message = document.getElementById("message").value;
+
+            // Reset error messages
+            document.getElementById("nameError").innerText = "";
+            document.getElementById("emailError").innerText = "";
+            document.getElementById("subjectError").innerText = "";
+            document.getElementById("messageError").innerText = "";
+
+            // Validate Name
+            if (name === "") {
+                document.getElementById("nameError").innerText = "Name is required";
+                document.getElementById("name").focus();
+                return;
+            }
+
+            // Validate Email
+            var emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+            if (email === "") {
+                document.getElementById("emailError").innerText = "Email is required";
+                document.getElementById("email").focus();
+                return;
+            } else if (!email.match(emailPattern)) {
+                document.getElementById("emailError").innerText = "Enter a valid email";
+                document.getElementById("email").focus();
+                return;
+            }
+
+            // Validate Subject
+            if (subject === "") {
+                document.getElementById("subjectError").innerText = "Subject is required";
+                document.getElementById("subject").focus();
+                return;
+            } else if (subject.length > 50) {
+                document.getElementById("subjectError").innerText = "Subject must be less than 50 characters";
+                document.getElementById("subject").focus();
+                return;
+            }
+
+            // Validate Message
+            if (message === "") {
+                document.getElementById("messageError").innerText = "Message is required";
+                document.getElementById("message").focus();
+                return;
+            } else if (message.length > 150) {
+                document.getElementById("messageError").innerText = "Message must be less than 150 characters";
+                document.getElementById("message").focus();
+                return;
+            }
+
+            // Prepare the email parameters
+            var formData = new FormData();
+            formData.append('from', 'Website Aurora Hiring <contact@mail.aurorahiring.com>');
+            formData.append('to', 'hello@aurorahiring.com');
+            formData.append('subject', subject);
+            formData.append('text', `From: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+
+            // Send the email using Mailgun
+            fetch('https://api.mailgun.net/v3/mail.aurorahiring.com/messages', {
+                method: 'POST',
+                headers: {
+                    'Authorization': 'Basic ' + btoa('api:1fee84bcacf7e4a8901c0f8366c8affb-826eddfb-92cc8404')
+                },
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log("SUCCESS!", data);
+                    showToast("Message sent successfully!");
+                    document.getElementById("contact_form").reset(); // Clear the form
+                })
+                .catch(error => {
+                    console.error("FAILED...", error);
+                    showToast("Message failed to send.");
+                });
+        });
+
+        function showToast(message) {
+            var toast = document.getElementById("toast");
+            toast.innerHTML = `<div id="desc">${message}</div>`;
+            toast.className = "toast show";
+            setTimeout(function () {
+                toast.className = toast.className.replace("show", "");
+            }, 3000);
+        }
+
+        // Hide error message when user starts typing
+        document.getElementById("name").addEventListener("input", function () {
+            document.getElementById("nameError").innerText = "";
+        });
+
+        document.getElementById("email").addEventListener("input", function () {
+            document.getElementById("emailError").innerText = "";
+        });
+
+        document.getElementById("subject").addEventListener("input", function () {
+            document.getElementById("subjectError").innerText = "";
+        });
+
+        document.getElementById("message").addEventListener("input", function () {
+            document.getElementById("messageError").innerText = "";
+        });
+    </script>
+
+    <!-- Toast notification -->
+    <div id="toast"></div>
+
+</body>
+
+</html>
