@@ -1,88 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>AF interactive</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <!-- Font Google -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+    <title>Our Team - AF Interactive</title>
+    <!-- Bootstrap and other libraries -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
-<style>
-    .team {
-        padding-top: 150px;
-    }
-</style>
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #555;
+        }
+
+        .section-padding {
+            padding: 120px 0;
+        }
+
+        h3 {
+            font-size: 36px;
+            font-weight: 600;
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .line {
+            width: 50px;
+            height: 2px;
+            background-color: #333;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+
+        .team-detail {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: auto;
+            margin-top: 0px;
+        }
+
+        .team-detail img {
+            max-width: 180px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-detail h4 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .team-detail p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #777;
+        }
+
+        @media (max-width: 768px) {
+            .team-detail {
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
 
 <body>
     <!-- Navbar -->
     <div id="navbar"></div>
 
-    <!-------Contact Start------->
-    <section class="team section-padding" data-scroll-index='3'>
+    <!-- Team Section -->
+    <section class="section-padding">
         <div class="container">
+            <h3>Our Team</h3>
+            <div class="line"></div>
+
             <div class="row">
-                <div class="col-md-12">
-                    <div class="sectioner-header text-center">
-                        <h3>Our Team</h3>
-                        <span class="line"></span>
-                        <p>Sed quis nisi nisi. Proin consectetur porttitor dui sit amet viverra. Fusce sit amet lorem
-                            faucibus,
-                            vestibulum ante in, pharetra ante.</p>
+                <!-- Team Member 1 -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="team-detail">
+                        <img src="images/user1.jpg" alt="Pratik Gautam">
+                        <h4>Pratik Gautam</h4>
+                        <p>CEO</p>
+                        <p>Pratik is the visionary leader behind AF Interactive. With over a decade of experience in the tech industry, he drives the company’s strategy, ensuring innovative solutions and exceptional service delivery for clients worldwide.</p>
                     </div>
-                    <div class="section-content text-center">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="team-detail wow bounce" data-wow-delay="0.2s"> <img src="images/user1.jpg"
-                                        class="img-fluid" />
-                                    <h4>Nitu Singh</h4>
-                                    <p>Marketing Specialist</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="team-detail wow bounce" data-wow-delay="0.4s"> <img src="images/user2.jpg"
-                                        class="img-fluid" />
-                                    <h4>Yogesh Singh</h4>
-                                    <p>CEO & Founder</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="team-detail wow bounce" data-wow-delay="0.6s"> <img src="images/user3.jpg"
-                                        class="img-fluid" />
-                                    <h4>Nisha Sharma</h4>
-                                    <p>Web Developer</p>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="team-detail">
+                        <img src="images/user2.jpg" alt="Kusum Adhikari">
+                        <h4>Kusum Adhikari</h4>
+                        <p>CTO</p>
+                        <p>Pratik is the visionary leader behind AF Interactive. With over a decade of experience in the tech industry, he drives the company’s strategy, ensuring innovative solutions and exceptional service delivery for clients worldwide.</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="team-detail">
+                        <img src="images/user3.jpg" alt="Dinesh Pariyar">
+                        <h4>Dinesh Pariyar</h4>
+                        <p>Sr. Backend Engineer</p>
+                        <p>Pratik is the visionary leader behind AF Interactive. With over a decade of experience in the tech industry, he drives the company’s strategy, ensuring innovative solutions and exceptional service delivery for clients worldwide.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Team Member 4 -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="team-detail">
+                        <img src="images/user4.jpg" alt="Sunil Shrestha">
+                        <h4>Sunil Shrestha</h4>
+                        <p>Sr. Quality Assurance Engineer</p>
+                        <p>Pratik is the visionary leader behind AF Interactive. With over a decade of experience in the tech industry, he drives the company’s strategy, ensuring innovative solutions and exceptional service delivery for clients worldwide.</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 5 -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="team-detail">
+                        <img src="images/user5.jpeg" alt="Ranjan Gajmir">
+                        <h4>Ranjan Gajmir</h4>
+                        <p>Sr. Frontend Engineer</p>
+                        <p>Pratik is the visionary leader behind AF Interactive. With over a decade of experience in the tech industry, he drives the company’s strategy, ensuring innovative solutions and exceptional service delivery for clients worldwide.</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 6 -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="team-detail">
+                        <img src="images/user6.png" alt="Suyog Mainali">
+                        <h4>Suyog Mainali</h4>
+                        <p>Sr. Game Developer</p>
+                        <p>Pratik is the visionary leader behind AF Interactive. With over a decade of experience in the tech industry, he drives the company’s strategy, ensuring innovative solutions and exceptional service delivery for clients worldwide.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Team Member 7 -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="team-detail">
+                        <img src="images/user7.png" alt="Saugat Subba">
+                        <h4>Saugat Subba</h4>
+                        <p>Sr. Graphic Designer</p>
+                        <p>Pratik is the visionary leader behind AF Interactive. With over a decade of experience in the tech industry, he drives the company’s strategy, ensuring innovative solutions and exceptional service delivery for clients worldwide.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-------Contact End------->
 
     <!-- Footer -->
     <div id="footer"></div>
 
-
+    <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <!-- scrollIt js -->
-    <script src="js/scrollIt.min.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" 
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
-
+    <!-- Navbar and Footer Loader -->
     <script>
         // Load Navbar
         fetch('navbar.html')
@@ -94,7 +185,6 @@
             .then(response => response.text())
             .then(data => document.getElementById('footer').innerHTML = data);
     </script>
-
 </body>
 
 </html>

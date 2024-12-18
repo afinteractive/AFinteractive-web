@@ -1,168 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>AF interactive</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <!-- Font Google -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+    <title>Services - AF Interactive</title>
+    <!-- Bootstrap and other libraries -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
-<style>
-    .icon-box {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .feature {
-        padding-top: 150px;
-    }
-
-    .maindiv {
-        display: flex;
-        align-items: center;
-    }
-
-    p {
-        margin: 0px;
-    }
-
-
-
-    @media (max-width: 767px) {
-        .icon-box {
-            display: flex;
-            flex-direction: column;
-
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #555;
         }
-    }
-</style>
+
+        .section-padding {
+            padding: 120px 0;
+        }
+
+        h3 {
+            font-size: 36px;
+            font-weight: 600;
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .service-card {
+            display: flex;
+            align-items: center;
+            margin-bottom: 50px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .service-card img {
+            max-width: 180px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-text {
+            padding-left: 30px;
+        }
+
+        .service-text h5 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .service-text p {
+            font-size: 16px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        @media (max-width: 768px) {
+            .service-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .service-card img {
+                margin-bottom: 20px;
+            }
+
+            .service-text {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
 
 <body>
     <!-- Navbar -->
     <div id="navbar"></div>
 
-    <!-------Contact Start------->
-    <section class="feature section-padding" data-scroll-index='2'>
+    <!-- Services Section -->
+    <section class="section-padding">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="sectioner-header text-center">
-                        <h3>Services</h3>
-                        <span class="line"></span>
-                    </div>
+            <h3>Our Services</h3>
+            <div class="line"></div>
 
-                    <div class="col-md-12">
-                        <div class="section-content text-center">
-                            <!-- Web Development -->
-                            <div class="main col-md-12 mb-4">
-                                <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-                                    <div>
-                                        <i class="fa fa-code" aria-hidden="true"></i>
-                                        <h5>Web Development</h5>
-                                    </div>
-                                    <div class="maindiv">
-                                        <p>We specialize in building robust, scalable, and secure web applications using
-                                            a
-                                            modern tech stack. Our expertise includes Java Spring Boot, Django,
-                                            Postgres,
-                                            and MongoDB for backend development, enabling us to create powerful,
-                                            data-driven
-                                            products. We focus on product development like CRM systems, CMS, and other
-                                            data-intensive projects to meet your business needs. For frontend
-                                            development,
-                                            we use React, HTML, CSS, and Three.js, ensuring a seamless, interactive, and
-                                            responsive user experience across all devices. Our team works closely with
-                                            clients to ensure every website is tailored to meet specific business
-                                            objectives
-                                            and is optimized for performance and growth.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Game Development -->
-                            <div class="col-md-12 mb-4">
-                                <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
-                                    <div>
-                                        <i class="fa fa-gamepad" aria-hidden="true"></i>
-                                        <h5>Game Development</h5>
-                                    </div>
-                                    <div class="maindiv">
-                                        <p>Our game development services cover a wide range of platforms including
-                                            Android,
-                                            iOS, Web, Windows, Xbox, and Steam. We focus on API-based game development,
-                                            2D
-                                            games, and interactive experiences. With a tech stack that includes Unity
-                                            for
-                                            game engines, along with tools like Photoshop, After Effects, Illustrator,
-                                            and
-                                            Blender for design and animation, we create high-quality games that engage
-                                            and
-                                            entertain players. From conceptualization to launch, we deliver immersive
-                                            gaming
-                                            experiences with cutting-edge technology. Our team is dedicated to producing
-                                            games that are not only technically advanced but also creatively compelling,
-                                            providing players with unforgettable experiences.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Cloud Services -->
-                            <div class="col-md-12 mb-4">
-                                <div class="icon-box wow fadeInUp" data-wow-delay="0.6s">
-                                    <div>
-                                        <i class="fa fa-cloud" aria-hidden="true"></i>
-                                        <h5>Cloud Services</h5>
-                                    </div>
-                                    <div class="maindiv">
-                                        <p>We offer comprehensive cloud solutions that ensure scalability, security, and
-                                            cost-efficiency. Our cloud services include Kubernetes deployment, cloud
-                                            services on Azure, GCP, and AWS, as well as migration services and
-                                            containerization. We help optimize cloud infrastructure to minimize costs
-                                            while
-                                            maintaining performance. Additionally, we provide solutions for local server
-                                            deployment, enabling businesses to choose the best cloud strategy based on
-                                            their
-                                            unique needs. Whether you are looking to migrate to the cloud or optimize
-                                            existing cloud resources, our expert team is here to support you. We focus
-                                            on
-                                            maximizing the potential of cloud technology to drive business efficiency,
-                                            enhance collaboration, and accelerate innovation.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+            <!-- Web Development -->
+            <div class="service-card">
+                <img src="https://via.placeholder.com/180" alt="Web Development">
+                <div class="service-text">
+                    <h5>Web Development</h5>
+                    <p>We specialize in building robust, scalable, and secure web applications using modern technologies
+                        such as <strong>Java Spring Boot</strong>, <strong>Django</strong>, <strong>React</strong>, and
+                        <strong>Three.js</strong>. From CRM systems to CMS platforms, we ensure seamless, interactive,
+                        and optimized experiences tailored to your business goals.</p>
                 </div>
             </div>
-    </section>
 
-    <!-------Contact End------->
+            <!-- Game Development -->
+            <div class="service-card">
+                <img src="https://via.placeholder.com/180" alt="Game Development">
+                <div class="service-text">
+                    <h5>Game Development</h5>
+                    <p>Our game development services cover <strong>2D games</strong> and <strong>interactive experiences</strong>
+                        across platforms like Android, iOS, Web, and Windows. Using tools like <strong>Unity</strong>, 
+                        <strong>Blender</strong>, and <strong>Photoshop</strong>, we deliver engaging and high-quality games.</p>
+                </div>
+            </div>
+
+            <!-- Cloud Services -->
+            <div class="service-card">
+                <img src="https://via.placeholder.com/180" alt="Cloud Services">
+                <div class="service-text">
+                    <h5>Cloud Services</h5>
+                    <p>We provide end-to-end cloud solutions, including <strong>Kubernetes deployment</strong>, 
+                        cloud services on <strong>AWS</strong>, <strong>Azure</strong>, and <strong>GCP</strong>, as well as 
+                        migration and cost-optimization strategies. Enhance business scalability and performance with our cloud expertise.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <!-- Footer -->
     <div id="footer"></div>
 
+    <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <!-- scrollIt js -->
-    <script src="js/scrollIt.min.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" 
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
+    <!-- Navbar and Footer Loader -->
     <script>
         // Load Navbar
         fetch('navbar.html')
@@ -174,7 +148,6 @@
             .then(response => response.text())
             .then(data => document.getElementById('footer').innerHTML = data);
     </script>
-
 </body>
 
 </html>
