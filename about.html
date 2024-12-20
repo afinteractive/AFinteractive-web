@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> About - AF Interactive </title>
     <!-- Bootstrap and other libraries -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
         integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
         integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
@@ -34,7 +34,6 @@
             margin-bottom: 30px;
         }
 
-
         .about-content {
             display: flex;
             align-items: center;
@@ -42,10 +41,13 @@
         }
 
         .about-content img {
-            max-width: 100%;
+            height: 550px;
+            object-fit: cover;
+            /* Ensure the image covers the area without distortion */
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+
 
         .about-text {
             padding-left: 30px;
@@ -58,11 +60,23 @@
             text-align: justify;
         }
 
+
+        @media (max-width: 992px) {
+            .about-content img {
+                height: 850px;
+                object-fit: cover;
+                /* Ensure the image covers the area without distortion */
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+
+        }
+
         @media (max-width: 768px) {
             .about-content {
                 flex-direction: column;
                 text-align: center;
-                padding: 0 15px; /* Add padding for smaller devices */
+
             }
 
             .about-text {
@@ -73,6 +87,15 @@
                 padding-left: 15px;
                 padding-right: 15px;
             }
+
+            .about-content img {
+                height: 100%;
+                object-fit: cover;
+                /* Ensure the image covers the area without distortion */
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+
         }
     </style>
 </head>
@@ -83,31 +106,56 @@
 
     <!-- About Section -->
     <section class="about-section">
-        <div class="container px-3"> <!-- Added Bootstrap padding -->
+        <div class="container px-3">
+            <!-- Section Title -->
             <h3>About Us</h3>
             <div class="line"></div>
+
+            <!-- About Content -->
             <div class="row about-content">
                 <!-- Image Column -->
                 <div class="col-md-6">
                     <img src="images/about/About_us.png" alt="AF Interactive" class="img-fluid">
                 </div>
+
                 <!-- Text Column -->
                 <div class="col-md-6 about-text">
                     <p>
-                        <strong>AF Interactive</strong>, established in 2024 and headquartered in Tokha, Kathmandu, is a
-                        forward-thinking technology company dedicated to delivering exceptional digital solutions. 
-                        We specialize in <strong>web development</strong>, <strong>game development</strong>, and 
-                        <strong>cloud services</strong>, blending creativity and technical expertise to empower businesses 
-                        and enhance user experiences.
+                        AF Interactive, established in 2024 and headquartered in Tokha, Kathmandu, is a
+                        forward-thinking technology company dedicated to delivering exceptional digital solutions. We
+                        specialize in web development, game development, and cloud services, blending creativity and
+                        technical expertise to empower businesses and enhance user experiences.
                     </p>
                     <p>
-                        Our mission is to bridge the gap between technology and human interaction. With a dedicated team
-                        of experts, we deliver scalable platforms, captivating games, and efficient solutions tailored to 
-                        each client's needs. From startups to enterprises, our focus is on innovation, reliability, and 
-                        collaboration.
+                        Our journey began with a vision to push the boundaries of innovation and bridge the gap between
+                        technology and human interaction. Whether it&rsquo;s developing interactive games that
+                        captivate players, creating robust and scalable web platforms, or providing efficient cloud
+                        services, we tailor every solution to meet the unique needs of our clients.
                     </p>
                     <p>
-                        Join us in shaping the future of technology. Let’s create solutions that inspire, empower, and connect.
+                        At AF Interactive, we believe that collaboration is the key to success. Our passionate team of
+                        tech enthusiasts, creative minds, and problem-solvers works closely with our clients to bring
+                        their ideas to life. We pride ourselves on understanding the challenges of diverse industries
+                        and delivering solutions that are not only functional but also impactful.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Full-width Section -->
+            <div class="row mt-4">
+                <div class="col-12 about-text">
+                    <p>
+                        Our core values revolve around innovation, reliability, and excellence. From startups to
+                        established enterprises, we are committed to being more than just a service provider &mdash; we
+                        are your trusted partner in technology.
+                    </p>
+                    <p>
+                        As we continue to grow and adapt to the ever-evolving tech landscape, our focus remains on
+                        creating meaningful digital experiences that stand out in a competitive world. Together, we aim
+                        to shape a future where technology inspires, empowers, and connects.
+                    </p>
+                    <p style="text-align: center; font-weight: 600; margin-top: 20px;">
+                        Let&rsquo;s build the future together.
                     </p>
                 </div>
             </div>
@@ -119,8 +167,9 @@
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" 
-        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
 
     <!-- Navbar and Footer Loader -->
     <script>
