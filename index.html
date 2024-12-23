@@ -52,20 +52,10 @@
 
 
 <style>
-  .slider-item {
-    background-color: #fff;
-    border-radius: 12px;
-    padding: 30px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-    transition: transform 0.3s ease-in-out;
-    height: 250px;
+  .mainImage {
+    padding: 20px;
   }
 
-  .slider-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  }
 
   .test-img {
     display: flex;
@@ -110,6 +100,22 @@
   .img-fluid {
     height: 400px;
   }
+
+  @media (max-width: 768px) {
+    .mainImage img {
+      display: none;
+    }
+  }
+
+
+
+  @media (max-width: 668px) {
+    .test-img {
+      display: none;
+    }
+  }
+
+
 
   /* Hide the image on mobile view (screen width of 767px or smaller) */
   @media (max-width: 767px) {
@@ -320,7 +326,7 @@
               <div class="offset-md-2 col-md-8 col-sm-12">
                 <div class="slider">
                   <!-- Slider Item 1 -->
-                  <div class="slider-item">
+                  <div class="mainImage">
                     <div class="test-img">
                       <img src="images/user.jpg" alt="Placeholder" class="rounded-circle" width="157" height="157">
                     </div>
@@ -337,7 +343,7 @@
                     </div>
                   </div>
                   <!-- Slider Item 2 -->
-                  <div class="slider-item">
+                  <div class="mainImage">
                     <div class="test-img">
                       <img src="images/user.jpg" alt="Placeholder" class="rounded-circle" width="157" height="157">
                     </div>
