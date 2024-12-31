@@ -14,6 +14,7 @@
   <!-- Font Google -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
 </head>
 
 
@@ -134,37 +135,160 @@
   }
 </style>
 
+
+<style>
+  .mainContainer {
+    padding-left: 350px;
+    padding-right: 350px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media (max-width: 1300px) {
+    .mainContainer {
+      padding-left: 200px;
+      padding-right: 200px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+
+  @media (max-width: 1020px) {
+    .mainContainer {
+      padding-left: 150px;
+      padding-right: 150px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .mainContainer {
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .mainContainer {
+      padding-left: 80px;
+      padding-right: 80px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+  }
+
+  @media (max-width: 530px) {
+    .mainContainer {
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+
+  @media (max-width: 370px) {
+    .mainContainer {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+
+  .banner-text {
+    padding-right: 0px;
+  }
+
+  h3 {
+    color: #7a60ff;
+  }
+</style>
+
+<style>
+  .learn-more-img {
+    transition: all 0.3s ease;
+  }
+
+  .learn-more-link:hover .learn-more-img {
+    content: url('images/new/Learn_More_when_Toggled.png');
+  }
+
+  .about-img {
+    transition: all 0.3s ease;
+  }
+
+  .about-link:hover .about-img {
+    content: url('images/new/Learn_More.png');
+  }
+</style>
+
 <body>
   <!-- Navbar -->
   <div id="navbar"></div>
 
 
   <!-------Banner Start------->
-  <section class="banner" data-scroll-index='0'>
+  <section class="banner" data-scroll-index='0'
+    style="background-image: url('images/new/Home_Page_BG.png'); background-size: cover; background-position: center;">
     <div class="banner-overlay">
-      <div class="container">
+      <div class="mainContainer">
         <div class="row">
-          <div class="col-md-8 col-sm-12">
+          <div class="col-md-12 col-sm-12">
             <div class="banner-text">
-              <h2 class="" style="font-size: 30px;">Innovative Technology, Inspired Solutions</h2>
-              <h6 class="">Empowering innovation through technology</h6>
-              <p class="banner-text">We specializes in creating custom software, interactive games, and cloud
+              <h2 class="" style="font-size: 30px; color: white;">Innovative Technology, Inspired Solutions</h2>
+              <h6 class="" style="font-size: 17px; font-weight: bold; color: white;">Empowering innovation through
+                technology</h6>
+              <p class="banner-text" style="color: white;">We specialize in creating custom software, interactive games,
+                and cloud
                 solutions. Our passionate team combines creativity and technology to deliver impactful, tailored
                 solutions that empower businesses and captivate audiences.
               </p>
-              <!-- <ul>
-              <li><a href="#"><img src="images/appstore.png" class="wow fadeInUp" data-wow-delay="0.4s"/></a></li>
-              <li><a href="#"><img src="images/playstore.png" class="wow fadeInUp" data-wow-delay="0.7s"/></a></li>
-            </ul> -->
             </div>
           </div>
-          <div class="col-md-4 col-sm-12" style="margin-top: 20px;"> <img style="height: 400px;"
-              src="images/iphone-screen.png" class="img-fluid wow fadeInUp" /> </div>
         </div>
       </div>
     </div>
-    <span class="svg-wave"> <img class="svg-hero" src="images/applight-wave.svg"> </span>
+    <div style="
+   position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 100%);
+    pointer-events: none;
+  "></div>
   </section>
+
+
+  <!-- <section class="banner" data-scroll-index='0'
+    style="background-image: url('images/new/Home_Page_BG.png'); background-size: cover; background-position: center; height: 600px;">
+    <div class="banner-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <div class="banner-text">
+              <h2 class="" style="font-size: 30px; color: white;">Innovative Technology, Inspired Solutions</h2>
+              <h6 class="" style="font-size: 17px; font-weight: bold; color: white;">Empowering innovation through
+                technology</h6>
+              <p class="banner-text" style="font-size: 17px; font-weight: bold; color: white;">We specializes in
+                creating custom software, interactive games, and cloud
+                solutions. Our passionate team combines creativity and technology to deliver impactful, tailored
+                solutions that empower businesses and captivate audiences.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
 
   <!-------Banner End------->
 
@@ -187,7 +311,9 @@
                 <!-- Web Development -->
                 <div class="col-md-4">
                   <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-                    <i class="fa fa-code" aria-hidden="true"></i> <!-- Relevant icon for Web Development -->
+                    <img style="height: 100px;" src="images/new/Web_Development.png" alt="Web Development"
+                      class="service-icon">
+                    <!-- Image for Web Development -->
                     <h5>Web Development</h5>
                     <p>We create secure, scalable web applications using modern technologies like Java Spring Boot,
                       Django, and React. From CRMs to data-driven projects, our tailored solutions help businesses grow
@@ -198,7 +324,9 @@
                 <!-- Game Development -->
                 <div class="col-md-4">
                   <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
-                    <i class="fa fa-gamepad" aria-hidden="true"></i> <!-- Relevant icon for Game Development -->
+                    <img style="height: 100px;" src="images/new/Game_Development.png" alt="Game Development"
+                      class="service-icon">
+                    <!-- Image for Game Development -->
                     <h5>Game Development</h5>
                     <p>We develop 2D games and interactive experiences for platforms like Android, iOS, Web, Windows,
                       Xbox, and Steam. Using Unity and advanced design tools, we craft engaging, unforgettable games.
@@ -208,7 +336,9 @@
                 <!-- Cloud Services -->
                 <div class="col-md-4">
                   <div class="icon-box wow fadeInUp" data-wow-delay="0.6s">
-                    <i class="fa fa-cloud" aria-hidden="true"></i> <!-- Relevant icon for Cloud Services -->
+                    <img style="height: 100px;" src="images/new/Cloud (1).png" alt="Cloud Services"
+                      class="service-icon">
+                    <!-- Image for Cloud Services -->
                     <h5>Cloud Services</h5>
                     <p>Our cloud expertise covers Kubernetes deployment, cost optimization, migration, and
                       containerization. On Azure, GCP, or AWS, we deliver scalable, secure solutions for your business.
@@ -217,14 +347,18 @@
                 </div>
               </div>
               <!-- Optional Learn More Button -->
-              <a href="service.html" class="learn-more-btn">Learn More</a>
+              <a href="service.html" class="learn-more-link">
+                <img class="learn-more-img" style="height: 50px;" src="images/new/Learn_More.png" alt="Learn More">
+              </a>
+
+
             </div>
           </div>
-
-
         </div>
       </div>
+    </div>
   </section>
+
   <!-------Services End------->
 
 
@@ -236,13 +370,16 @@
       <div class="row">
         <div class="col-md-12">
           <div class="sectioner-header text-center white">
-            <h3>About</h3>
+            <h3 style="color: white;">About</h3>
             <span class="line"></span>
             <p class="white">We are a tech-driven company delivering innovative web, game, and cloud solutions from our
               headquarters
               in Tokha, Kathmandu.</p>
             <!-- Stylish Learn More Button -->
-            <a href="about.html" class="learn-more-btn">Learn More</a>
+            <a href="about.html" class="about-link">
+              <img style="height: 50px;" class="about-img" src="images/new/Learn_More_when_Toggled.png"
+                alt="Learn More">
+            </a>
           </div>
         </div>
       </div>
@@ -313,7 +450,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="sectioner-header text-center white">
-            <h3>Testimonials</h3>
+            <h3 style="color: white;">Testimonials</h3>
             <span class="line"></span>
             <p class="white">
               Our clients' success stories are a testament to our commitment to delivering innovative,
@@ -462,6 +599,8 @@
     });
 
   </script>
+
+
 </body>
 
 </html>

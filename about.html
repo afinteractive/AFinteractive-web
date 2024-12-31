@@ -13,92 +13,97 @@
         integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+</head>
 
-    <!-- Custom CSS -->
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
+<style>
+    .navbar {
+        background: #7a60ff;
+        background: linear-gradient(to left, #7a60ff, #cd9ffa);
+        z-index: 999999999999;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #navbar {
+        background: #7a60ff;
+        background: linear-gradient(to left, #7a60ff, #cd9ffa);
+    }
+
+    .about-section {
+        padding-top: 140px;
+        padding-bottom: 40px;
+        background: #f8f9fa;
+    }
+
+    .about-section h3 {
+        font-size: 27px;
+        font-weight: 800;
+        color: #333;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .about-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .about-content img {
+        height: 550px;
+        object-fit: cover;
+        border-radius: 8px;
+       box-shadow: 0 0 5px 1px rgba(122, 96, 255, 0.8), 0 0 10px 3px rgba(122, 96, 255, 0.6);
+
+    }
+
+    .about-text {
+        padding-left: 30px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+        line-height: 1.8;
+        color: #555;
+        text-align: justify;
+    }
+
+    @media (max-width: 992px) {
+        .about-content img {
+            height: 850px;
+            object-fit: cover;
+            border-radius: 8px;
+           box-shadow: 0 0 5px 1px rgba(122, 96, 255, 0.8), 0 0 10px 3px rgba(122, 96, 255, 0.6);
+
+        }
+    }
+
+    @media (max-width: 768px) {
+        .about-content {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .about-text {
+            padding: 20px 0 0;
         }
 
         .about-section {
-            padding-top: 140px;
-            padding-bottom: 40px;
-            background: #f8f9fa;
-        }
-
-        .about-section h3 {
-            font-size: 27px;
-            font-weight: 800;
-            color: #333;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .about-content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            padding-left: 15px;
+            padding-right: 15px;
         }
 
         .about-content img {
-            height: 550px;
+            height: 100%;
             object-fit: cover;
-            /* Ensure the image covers the area without distortion */
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-
-        .about-text {
-            padding-left: 30px;
-        }
-
-        .about-text p {
-            font-size: 16px;
-            line-height: 1.8;
-            color: #555;
-            text-align: justify;
-        }
-
-
-        @media (max-width: 992px) {
-            .about-content img {
-                height: 850px;
-                object-fit: cover;
-                /* Ensure the image covers the area without distortion */
-                border-radius: 8px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            }
+           box-shadow: 0 0 5px 1px rgba(122, 96, 255, 0.8), 0 0 10px 3px rgba(122, 96, 255, 0.6);
 
         }
-
-        @media (max-width: 768px) {
-            .about-content {
-                flex-direction: column;
-                text-align: center;
-
-            }
-
-            .about-text {
-                padding: 20px 0 0;
-            }
-
-            .about-section {
-                padding-left: 15px;
-                padding-right: 15px;
-            }
-
-            .about-content img {
-                height: 100%;
-                object-fit: cover;
-                /* Ensure the image covers the area without distortion */
-                border-radius: 8px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            }
-
-        }
-    </style>
-</head>
+    }
+</style>
 
 <body>
     <!-- Navbar -->
@@ -108,7 +113,7 @@
     <section class="about-section">
         <div class="container px-3">
             <!-- Section Title -->
-            <h3>About Us</h3>
+            <h3 style="color: #7a60ff;">About Us</h3>
             <div class="line"></div>
 
             <!-- About Content -->
@@ -154,7 +159,7 @@
                         creating meaningful digital experiences that stand out in a competitive world. Together, we aim
                         to shape a future where technology inspires, empowers, and connects.
                     </p>
-                    <p style="text-align: center; font-weight: 600; margin-top: 20px;">
+                    <p style="text-align: center; font-weight: 1000; margin-top: 20px; color: black;">
                         Let&rsquo;s build the future together.
                     </p>
                 </div>
